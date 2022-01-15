@@ -1,0 +1,118 @@
+#root, html, body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Dongle', sans-serif;
+    font-size: large;
+}
+
+.app{
+    height: 100%;
+    /* background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/src/images/jeremy-perkins-7S1yZoFcVV0-unsplash.jpg); */
+    background-color: rgba(25, 28, 31, 0.712);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h1{
+    color: rgb(0, 0, 0);
+}
+.card{
+    background-color: rgba(255, 255, 255, 0.966);
+    width: auto;
+    max-width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1%;
+    border-radius: 25px;
+    box-shadow: 5px 5px ;
+
+}
+
+@media only screen and (max-width: 1000px){
+
+    .card{
+        width: 100%;
+        height: auto;
+        line-height: 30px;
+    }
+    h1{
+        padding-bottom: 0;
+        margin-bottom: 0;
+        /* font-size: small; */
+    }
+}
+
+.button {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 40px;
+    width: 150px;
+    opacity: 1;
+    background-color: rgb(45, 96, 185);
+    border: 1px solid rgb(255, 255, 255);
+  }
+    
+  .button span {
+    color: #ffffffd5;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+  }
+    
+  .button:hover {
+    animation: rotate 0.7s ease-in-out both;
+  }
+    
+  .button:hover span {
+    animation: storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    25% {
+      transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+    50% {
+      transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+    
+  @keyframes storm {
+    0% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+    25% {
+      transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+    50% {
+      transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+    75% {
+      transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  }
